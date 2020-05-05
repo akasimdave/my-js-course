@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If-Else Statements</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1 style="text-align: center;"><u>If Else Statements in JavaScript</u></h1>
+
+		<div class="intro-to-if-else">
+	        <h2><u>Introduction to if-else statements</u></h2>
+			<p>In JavaScripts, as in other programming languages, you'll deal with conditional scenarios where you have to make decisions based on certain criteria. This can be achieved using the if-else conditional statements.</p>
+		</div>
+
+		<div class="code-examples">
+			<h2><u>Code Examples</u></h2>
+			
+			<div class="example-one">
+				<h5>1. A program that gives access to people between ages 18 and 24</h5>
+				<b>Code:</b>
+<pre><mark>var age = 17;
+if (age >= 18 && age <= 35) {
+	document.write("Grant access");
+}
+else if (age < 18) {
+	document.write("You're too young for the program.");
+}else{
+	document.write("You're too old for the program.");
+}
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					function programAccess(age){
+						if (age >= 18 && age <= 35) {
+							document.write("Access granted");
+						}
+						else if (age < 18) {
+							document.write("You're too young for the program.");
+						}else{
+							document.write("You're too old for the program.");
+						}
+					}
+					programAccess(37);
+				</script>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
