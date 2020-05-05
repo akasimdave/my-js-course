@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<h1 style="text-align: center"><u>Functions in JavaScript</u></h1>
+
+		<div class="intro-to-functions">
+	        <h2><u>Introduction to functions</u></h2>
+	        <p>Functions are just recipes. For example:</p>
+	        <dl>
+	            <dt>How to make Turkey Sandwich.</dt>
+	                <dd>1. Get one slice of bread,</dd>
+	                <dd>2. Add turkey, and</dd>
+	                <dd>3. Put a slice of bread on top.</dd>
+	        </dl>
+	        <p>Can be represented as a function in the following manner:</p>
+<pre><mark>function makeTurkeySandwich() {
+    Get one slice of bread;
+	Add turkey;
+	Put a slice of bread on top; 
+}
+makeTurkeySandwich();
+</mark></pre>
+		</div>
+
+		<div class="customizing-functions">
+			<h2><u>Customizing Functions</u></h2>
+			<p>Functions can be customized. For example:</p>
+	        <dl>
+	            <dt>How to make Sandwich ____</dt>
+	                <dd>1. Get one slice of bread,</dd>
+	                <dd>2. Add ____, and</dd>
+	                <dd>3. Put a slice of bread on top.</dd>
+	        </dl>
+<pre><mark>function makeSandwichWith(filling) {
+	Get one slice of bread;
+	Add filling;
+	Put a slice of bread on top;
+}
+makeSandwichWith("ham"); // Where the filling is ham
+</mark></pre>
+		</div>
+
+		<div class="code-examples">
+			<h2><u>Code Examples</u></h2>
+			
+			<div class="example-one">
+				<h5>1. A function that says hi to a person</h5>
+				<b>Code:</b>
+<pre><mark>function sayHiTo (personName){
+	document.write("Hi ", personName);
+}
+sayHiTo("SimDave");
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					function sayHiTo (personName){
+						document.write("Hi ", personName);
+					}
+					sayHiTo("SimDave");
+					document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-two">
+				<h5>2. A function that displays an array</h5>
+				<b>Code:</b>
+<pre><mark>var myArray = ['item 1', ' item 2', ' item 3'];
+function displayArray(){
+	document.write('Array: ', myArray);
+}
+displayArray();
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					var myArray = ['item 1', ' item 2', ' item 3'];
+					function displayArray(){
+						document.write('Array: ', myArray);
+					}
+					displayArray();
+					document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-two">
+				<h5>3. A function that adds an item to an array</h5>
+				<b>Code:</b>
+<pre><mark>var myArray = ['item 1', ' item 2', ' item 3'];
+function addItem(){
+	myArray.push(" item 4", " item 5");
+	document.write('Array: ', myArray);
+}
+addItem();
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					var myArray = ['item 1', ' item 2', ' item 3'];
+					function addItem(){
+						myArray.push(" item 4", " item 5");
+						document.write('Array: ', myArray);
+					}
+					addItem();
+					document.write('<br>');
+				</script>
+				<b>OR</b>
+				<br>
+				<b>Code:</b>
+<pre><mark>var myArray = ['item 1', ' item 2', ' item 3'];
+function addItem(item){
+	myArray.push(item);
+	document.write('Array: ', myArray);
+}
+addItem(" item 4, item 5");
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					var myArray = ['item 1', ' item 2', ' item 3'];
+					function addItem(item){
+						myArray.push(item);
+						document.write('Array: ', myArray);
+					}
+					addItem(" item 4, item 5");
+					document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-three">
+				<h5>3. A function that changes an item in an array</h5>
+				<b>Code:</b>
+<pre><mark>var myArray = ['item 1', ' item 2', ' item 3'];
+function changeItem(position, newValue){
+	myArray[position] = newValue;
+	document.write(myArray);
+}
+changeItem(1, " changed item");
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					var myArray = ['item 1', ' item 2', ' item 3'];
+					function changeItem(position, newValue){
+						myArray[position] = newValue;
+						document.write(myArray);
+					}
+					changeItem(1, " changed item");
+					document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-four">
+				<h5>4. A function that deletes an item in an array</h5>
+				<b>Code:</b>
+<pre><mark>var myArray = ['item 1', ' item 2', ' item 3'];
+function deleteItem(position){
+	myArray.splice(position, 1)
+	document.write(myArray);
+}
+deleteItem(1);
+</mark></pre>
+				<script type="text/javascript">
+					document.write("<b>Result:</b> ");
+					var myArray = ['item 1', ' item 2', ' item 3'];
+					function deleteItem(position){
+						myArray.splice(position, 1)
+						document.write(myArray);
+					}
+					deleteItem(1);
+					document.write('<br><br>');
+				</script>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html> 
