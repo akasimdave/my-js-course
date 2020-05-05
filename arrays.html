@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1 style="text-align: center"><u>Arrays in JavaScript</u></h1>
+		<div class="intro-to-arrays">
+	        <h2><u>Introduction to Arrays</u></h2>
+	        <p>Arrays are simply a list of items. For example:</p>
+	        <dl>
+	            <dt>List of Things I need to do (Todo list</dt>
+	                <dd>1. Eat</dd>
+	                <dd>2. Code</dd>
+	                <dd>3. Sleep</dd>
+	                <dd>4. Repeat</dd>
+	        </dl>
+	        <p>Can be represented as an array in JavaScript in the following manner:</p>
+<pre><mark>var todoList = ['Eat', 'Code', 'Sleep', 'Repeat',];
+</mark></pre>
+			<p>When using arrays, there are certain things we can do with the items in an array which includes display, add, change and delete items.</p>
+		</div>
+
+		<div class="code-examples">
+			<h2><u>Code Examples</u></h2>
+			
+			<div class="example-one">
+				<h5>1. Creating and displaying an array</h5>
+				<b>Code:</b>
+<pre><mark>// Create and store array in a variable
+var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+// Display array
+document.write('My todos are: ', todos);
+</mark></pre>
+				<script type="text/javascript">
+
+				document.write("<b>Result:</b> ");
+				// Create and store array in a variable
+				var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+				// Display stored arrays
+				document.write('My todos are: ', todos);
+				document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-two">
+				<h5>2. Adding an item or group of items to an array</h5>
+				<b>Code:</b>
+<pre><mark>// Create and store array in a variable
+var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+// Adding items to the array
+todos.push(' Todo 4', ' Todo 5');
+// Display new array
+document.write('My todos are: ', todos);
+</mark></pre>
+				<script type="text/javascript">
+
+				document.write("<b>Result:</b> ");
+				// Create and store array in a variable
+				var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+				// Adding items to the array
+				todos.push(' Todo 4', ' Todo 5');
+				// Display new array
+				document.write('My todos are: ', todos);
+				document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-three">
+				<h5>3. Changing or updating an item in an array</h5>
+				<b>Code:</b>
+<pre><mark>// Create and store array in a variable
+var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+// Change item in array
+todos[0] = 'First todo updated';
+// Display new array
+document.write('My todos are: ', todos);
+</mark></pre>
+				<script type="text/javascript">
+
+					document.write("<b>Result:</b> ");
+					// Create and store array in a variable
+					var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+					// Change item in array
+					todos[0] = 'Updated todo';
+					// Display new array
+					document.write('My todos are: ', todos);
+					document.write('<br><br>');
+				</script>
+			</div>
+			
+			<div class="example-four">
+				<h5>4. Deleting an item from an array</h5>
+				<b>Code:</b>
+<pre><mark>// Create and store array in a variable
+var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+document.write("<b>Result:</b> ");
+// Delete an item in an array
+todos.splice(1, 1);
+// Display new array
+document.write('My todos are: ', todos);
+</mark></pre>
+				<script type="text/javascript">
+					// Create and store array in a variable
+					var todos = ['Todo 1', ' Todo 2', ' Todo 3'];
+					document.write("<b>Result:</b> ");
+					// Delete an item in an array
+					todos.splice(1, 1);
+					// Display new array
+					document.write('My todos are: ', todos);
+					document.write('<br><br>');
+				</script>
+			</div>
+
+	</div>
+
+</body>
+</html>
